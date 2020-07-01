@@ -55,7 +55,7 @@
           "#random_choice .card-title h2"
         );
         let title_orig_holder = document.querySelectorAll(
-          "card-body h2 .card-title-orig"
+          ".card-body h2 .card-title-orig"
         );        
         let description_holder = document.querySelectorAll(
           ".card-body .card-text"
@@ -76,17 +76,17 @@
         // console.log(title_holder[0]);
       }
 
-      document.addEventListener(
-        "DOMContentLoaded",
-        function () {
-          shuffle(serieTv);
-          let button = document.getElementById("my-button");
-          button.addEventListener("click", () => {
-            shuffle(serieTv);
-          });
-        },
-        false
-      );
+      // document.addEventListener(
+      //   "DOMContentLoaded",
+      //   function () {
+      //     shuffle(serieTv);
+      //     let button = document.getElementById("my-button");
+      //     button.addEventListener("click", () => {
+      //       shuffle(serieTv);
+      //     });
+      //   },
+      //   false
+      // );
     </script>
   </head>
   <body>
@@ -157,5 +157,18 @@
         </div>
       </div>
     </main>
+    <script>
+      document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          shuffle(serieTv);
+          let button = document.getElementById("my-button");
+          button.addEventListener("click", () => {
+            shuffle(serieTv);
+          });
+        },
+        false
+      );
+    </script>
   </body>
 </html>
