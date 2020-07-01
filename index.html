@@ -52,17 +52,25 @@
         serie_selected.push(serieSelezionata);
         console.log(serie_selected);
         let title_holder = document.querySelectorAll(
-          "#random_choice .card-title h1"
+          "#random_choice .card-title h2"
         );
+        let title_orig_holder = document.querySelectorAll(
+          "card-body h2 .card-title-orig"
+        );        
         let description_holder = document.querySelectorAll(
-          "#random_choice .card-text"
+          ".card-body .card-text"
         );
+        let anno_holder = document.querySelectorAll(
+          ".card-body .card-anno"
+        );        
         let url_holder = document.querySelectorAll("#random_choice img");
         let rating_holder = document.querySelectorAll(
           "#random_choice #rating_choice"
         );
         title_holder[0].innerText = serieSelezionata.title;
+        title_orig_holder[0].innerText = serieSelezionata.original_title;
         description_holder[0].innerText = serieSelezionata.description;
+        anno_holder[0].innerText = serieSelezionata.year;
         url_holder[0].src = serieSelezionata.img;
         rating_holder[0].innerText = "Voto " + serieSelezionata.rating;
         // console.log(title_holder[0]);
@@ -135,16 +143,17 @@
                 <h2>titolo</h2>
               </div>
             </div>
-            <div class="col-md">
-              <div class="card-body">
-                <h4>Anno:</h4><p class="card-anno"></p>
-                <br>
-                <h4>Descrizione serie</h4>
-                <p class="card-text"></p>
-              </div>
-            </div>
           </div>
-
+          <div class="col-md">
+             <div class="card-body">
+              <h2 class="card-title-orig">titolo</h2>               
+               <h4>Anno:</h4>
+               <p class="card-anno"></p>
+               <br />
+               <h4>Descrizione serie</h4>
+               <p class="card-text"></p>
+             </div>
+          </div>
         </div>
       </div>
     </main>
