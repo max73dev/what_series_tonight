@@ -91,41 +91,60 @@
     </section>
     <main>
       <div class="container text-center mt-3">
-        <h2>
+        <h3>
           Con questa app non dovrai più perdere tempo nel cercare una serie da
           guardare. Lasciati ispirare e clicca sul bottone per cominciare a
           vedere la tua nuova serie!
-        </h2>
+        </h3>
       </div>
-      <div class="container mt-5" style="margin-top: 30px;height: 70vh">
-        <div
-          class="card text-center border border-primary"
-          style="margin: 0 auto; width: 30rem; height: 100%; position: relative;"
-          id="random_choice"
-        >
-          <button id="my-button" class="btn btn-primary" style="padding: 20px 0;;">
-            CLICCA e trova una serie da guardare!
-          </button>
-          <div
-            id="rating_choice"
-            style="
-              padding: 10px;
-              background-color: white;
-              position: absolute;
-              top: 50px;
-              right: 0;
-              z-index: 0;
-            "
-          >
-            Voto
+      <div class="container mt-3" style="margin-top: 30px; height: 80vh;">
+        <div class="row">
+          <div class="col-md">
+            <div
+              class="card text-center border border-primary"
+              style="
+                margin: 0 auto;
+                width: 30rem;
+                height: 100%;
+                position: relative;
+              "
+              id="random_choice"
+            >
+              <button
+                id="my-button"
+                class="btn btn-primary"
+                style="padding: 20px 0;"
+              >
+                CLICCA e trova una serie da guardare!
+              </button>
+              <div
+                id="rating_choice"
+                style="
+                  padding: 10px;
+                  background-color: white;
+                  position: absolute;
+                  top: 30px;
+                  right: 0;
+                  z-index: 0;
+                "
+              >
+                Voto
+              </div>
+              <img src="pippo.jpg" class="card-img-top" />
+              <div class="card-title">
+                <h2>titolo</h2>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card-body">
+                <h4>Anno:</h4><p class="card-anno"></p>
+                <br>
+                <h4>Descrizione serie</h4>
+                <p class="card-text"></p>
+              </div>
+            </div>
           </div>
-          <img src="pippo.jpg" class="card-img-top" />
-          <div class="card-title">
-            <h1>titolo</h1>
-          </div>
-          <div class="card-body">
-            <p class="card-text"></p>
-          </div>
+
         </div>
       </div>
     </main>
